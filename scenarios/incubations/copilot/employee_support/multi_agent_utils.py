@@ -7,7 +7,6 @@ from pathlib import Path
 import json
 import random
 from dotenv import load_dotenv
-from openai.embeddings_utils import get_embedding, cosine_similarity
 import inspect
 env_path = Path('..') / 'secrets.env'
 load_dotenv(dotenv_path=env_path)

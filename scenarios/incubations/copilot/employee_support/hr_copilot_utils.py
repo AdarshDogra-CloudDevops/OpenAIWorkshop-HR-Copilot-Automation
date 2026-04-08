@@ -1,4 +1,5 @@
 # Agent class
+# redeploy trigger
 ### responsbility definition: expertise, scope, conversation script, style 
 import openai
 import os
@@ -12,7 +13,6 @@ from tenacity import retry, wait_random_exponential, stop_after_attempt
 from dotenv import load_dotenv
 from azure.core.credentials import AzureKeyCredential  
 from azure.search.documents import SearchClient  
-from openai.embeddings_utils import get_embedding, cosine_similarity
 import inspect
 env_path = Path('..') / 'secrets.env'
 load_dotenv(dotenv_path=env_path)
